@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body>
+  <header class="header">
+
+    <button class="menu-toggle" id="menu-btn">
+      <img src="assets/images/icon-menu.svg" alt="icon-menu" class="menu-toggle">
+    </button>
+
+    <img src="assets/images/logo.svg" alt="Website Logo" class="logo">
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">New</a>
+      <a href="#">Popular</a>
+      <a href="#">Trending</a>
+      <a href="#">Categories</a>
+    </nav>
+
+    <nav class="nav2" id="nav2">
+<button class="close-btn" id="close-btn">
+  <img src="assets/images/icon-menu-close.svg" alt="close button"> </button>
+       <a href="#">Home</a>
+      <a href="#">New</a>
+      <a href="#">Popular</a>
+      <a href="#">Trending</a>
+      <a href="#">Categories</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- بخش مقاله اصلی -->
+    <article class="featured">
+      <img src="assets/images/image-web-3-desktop.jpg" alt="Colorful 3D blocks" class="featured-img">
+      <div class="featured-content">
+        <h1>The Bright Future of Web 3.0?</h1>
+        <p>
+          We dive into the next evolution of the web that claims to put the power of the platforms
+          back into the hands of the people. But is it really fulfilling its promise?
+        </p>
+        <a href="#" class="btn-read">Read more</a>
+      </div>
+    </article>
+
+    <!-- بخش New -->
+    <aside class="new">
+      <h2>New</h2>
+      <div class="news-item">
+        <h3>Hydrogen VS Electric Cars</h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+      <div class="news-item">
+        <h3>The Downsides of AI Artistry</h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+      <div class="news-item">
+        <h3>Is VC Funding Drying Up?</h3>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </aside>
+  </main>
+
+  <!-- بخش سه کارت پایین -->
+  <section class="articles">
+    <div class="card">
+      <img src="assets/images/image-retro-pcs.jpg" alt="Retro PCs">
+      <div>
+        <h1>01</h1>
+        <h2>Reviving Retro PCs</h2>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/image-top-laptops.jpg" alt="Top Laptops">
+      <div>
+        <h1>02</h1>
+        <h2>Top 10 Laptops of 2022</h2>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/image-gaming-growth.jpg" alt="Gaming Growth">
+      <div>
+        <h1>03</h1>
+        <h2>The Growth of Gaming</h2>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </section>
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+const closeBtn = document.getElementById("close-btn");
+const nav = document.getElementById("nav2");
+
+menuBtn.addEventListener("click", () => {
+  nav2.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+  nav2.classList.remove("active");
+});
+
+</script>
+
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | News homepage</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <img src="assets/images/logo.svg" alt="Website logo" class="logo">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html">New</a>
+      <a href="index.html">Popular</a>
+      <a href="index.html">Trending</a>
+      <a href="index.html">Categories</a>
+    </nav>
+  </header>
+
+<main class="main">
+  <article class="featurd">
+    <img src="assets/images/image-web-3-desktop.jpg" alt="colorful 3D blocks" class="featurd-img">
+    <div class="content">
+    <h1> The Bright Future of Web 3.0?</h1>
+    <p>  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+  But is it really fulfilling its promise?</p>
+  <a href="index.html" class="btn-read"> Read more</a>
+    </div>
+  </article>
+
+  <aside class="new">
+    <h2>New</h2>
+    <div class="news-item">
+    <h3>  Hydrogen VS Electric Cars</h3>
+    <h4>  Will hydrogen-fueled cars ever catch up to EVs?</h4>
+    </div>
+
+        <div class="news-item">
+     <h2>The Downsides of AI Artistry</h2>
+    <h4> What are the possible adverse effects of on-demand AI image generation?</h4>
+    </div> 
+
+        <div class="news-item">
+
+    <h3> Is VC Funding Drying Up?</h3>
+    <h4> Private funding by VC firms is down 50% YOY. We take a look at what that means.</h4>
+        </div>
+  </aside>
+</main>
+
+<section class="footer">
+  <div class="card">
+  <img src="assets/images/image-retro-pcs.jpg" alt="Retro PCs">
+  <div class="text">
+<h1>01</h1>
+<h2>  Reviving Retro PCs</h2>
+<p>What happens when old PCs are given modern upgrades?</p>
+  </div>
+  </div>
+
+  <div class="card"> 
+<img src="assets/images/image-top-laptops.jpg" alt="Top Laptops">
+  <div class="text">
+<h1>02</h1>
+<h2>Top 10 Laptops of 2022</h2> 
+ <p>Our best picks for various needs and budgets.</p>
+  </div>
+  </div>
+
+    <div class="card"> 
+<img src="assets/images/image-gaming-growth.jpg" alt="Gaming Growth">
+  <div class="text">
+<h1>03</h1>
+<h2>The Growth of Gaming</h2> 
+ <p>   How the pandemic has sparked fresh opportunities.</p>
+  </div>
+  </div>
+
+</section>
+
+
+</body>
+</html> -->
